@@ -1,5 +1,5 @@
-import { Layer } from 'core/layers'
-import { Tensor } from 'core/types'
+import { Layer } from '../layers';
+import { Tensor } from '../types';
 
 export class Dense extends Layer{
     feedForward(input:Tensor):Tensor{

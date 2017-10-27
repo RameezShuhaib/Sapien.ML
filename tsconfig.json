@@ -11,7 +11,10 @@
       "sourceRoot":"src/",
       "target":"es5",
       "listFiles":true,
-      "baseUrl": "./src"
+      "baseUrl": ".",
+      "paths": {
+        "sapien/*" : ["./src/*"]
+      }
     },
     "exclude": [
       "build",

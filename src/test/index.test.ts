@@ -1,20 +1,19 @@
 import { suite, test, slow, timeout } from "mocha-typescript";
-import * as assert from "assert";
-
-import { Dense } from "../src/core/layers";
-import { Tensor } from "../src/core/types";
-
+import * as assert from "assert" ;
+import { Dense } from 'core/layers'; 
+import { Tensor } from 'core/types';
 // import { hello } from '../src/index';
 @suite class Test{
     @test testHello(){
-        // hello()
-    }
-    @test testDenseLayer() {
+        var d = new Dense()
+        console.log("created Dense layer ")
+        d.feedForward(new Tensor())
+        console.log("feeding Dense layer")    
         let layer1: Dense = new Dense();
         let inputX: Tensor = new Tensor();
 
         it('feedForward must always return a tensor', () => {
             assert.equal(typeof layer1.feedForward(inputX), Tensor);
-        })
+        })    
     }
 }

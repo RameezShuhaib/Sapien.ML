@@ -9,7 +9,7 @@ var browserifyConf = {
     dist: {
         files: {
             // destination for transpiled js : source js
-            'build/sapien.js': ['temp/core/**/*.js']
+            'build/sapien.js': ['temp/sapien/core/**/*.js']
         },
         options: {
             transform: [['babelify', { presets: "es2015" }]],

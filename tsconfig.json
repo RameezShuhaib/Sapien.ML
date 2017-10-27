@@ -6,15 +6,12 @@
       "preserveConstEnums": true,
       "experimentalDecorators":true,
       "outDir": "temp",
-      "rootDir":"",
+      "rootDir":".",
       "sourceMap": true,
       "sourceRoot":"src/",
       "target":"es5",
       "listFiles":true,
-      "baseUrl": ".",
-      "paths": {
-        "sapien/*" : ["./src/*"]
-      }
+      "baseUrl": "./src"
     },
     "exclude": [
       "build",

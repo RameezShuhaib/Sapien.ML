@@ -1,7 +1,7 @@
 import { suite, test, slow, timeout } from "mocha-typescript";
 import * as assert from "assert" ;
-import { Dense } from 'core/layers'; 
-import { Tensor } from 'core/types';
+import { Dense } from 'sapien/core/layers'; 
+import { Tensor } from 'sapien/core/types';
 // import { hello } from '../src/index';
 @suite class Test{
     @test testHello(){

@@ -1,4 +1,4 @@
-import { Tensor } from 'core/types'
+import { Tensor } from 'sapien/core/types'
 export abstract class Layer{
     /*
         this method is does all the operation of a single layer.
